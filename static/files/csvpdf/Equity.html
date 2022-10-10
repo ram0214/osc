@@ -1,0 +1,4222 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Security Code</th>
+      <th>Issuer Name</th>
+      <th>Security Id</th>
+      <th>Security Name</th>
+      <th>Status</th>
+      <th>Group</th>
+      <th>Face Value</th>
+      <th>ISIN No</th>
+      <th>Industry</th>
+      <th>Instrument</th>
+      <th>Sector Name</th>
+      <th>Industry New Name</th>
+      <th>Igroup Name</th>
+      <th>ISubgroup Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>500002</td>
+      <td>ABB India Limited</td>
+      <td>ABB</td>
+      <td>ABB India Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE117A01022</td>
+      <td>Heavy Electrical Equipment</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Electrical Equipment</td>
+      <td>Heavy Electrical Equipment</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>500003</td>
+      <td>Aegis Logistics Ltd.</td>
+      <td>AEGISLOG</td>
+      <td>AEGIS LOGISTICS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE208C01025</td>
+      <td>Trading - Gas</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Gas</td>
+      <td>Trading - Gas</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>500008</td>
+      <td>Amara Raja Batteries Ltd</td>
+      <td>AMARAJABAT</td>
+      <td>AMARA RAJA BATTERIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE885A01032</td>
+      <td>Batteries - Automobile</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Batteries - Automobile</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>500009</td>
+      <td>Ambalal Sarabhai Enterprise Ltd.,</td>
+      <td>AMBALALSA</td>
+      <td>AMBALAL SARABHAI ENTERPRISES LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE432A01017</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>500010</td>
+      <td>Housing Development Finance Corp.Lt</td>
+      <td>HDFC</td>
+      <td>HOUSING DEVELOPMENT FINANCE CORP.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE001A01036</td>
+      <td>Housing Finance Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Housing Finance Company</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>500012</td>
+      <td>Andhra Petrochemicals Ltd.,</td>
+      <td>ANDHRAPET</td>
+      <td>ANDHRA PETROCHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE714B01016</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>500013</td>
+      <td>Ansal Properties &amp; Infrastructure Ltd.</td>
+      <td>ANSALAPI</td>
+      <td>ANSAL PROPERTIES &amp; INFRASTRUCTURE LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>5.0</td>
+      <td>INE436A01026</td>
+      <td>Residential- Commercial Projects</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Realty</td>
+      <td>Realty</td>
+      <td>Residential, Commercial Projects</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>500014</td>
+      <td>UTIQUE ENTERPRISES LIMITED</td>
+      <td>UTIQUE</td>
+      <td>Utique Enterprises Ltd</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE096A01010</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>500016</td>
+      <td>Aruna Hotels Ltd.</td>
+      <td>ARUNAHTEL</td>
+      <td>ARUNA HOTELS LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE957C01019</td>
+      <td>Hotels &amp; Resorts</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Hotels &amp; Resorts</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>500020</td>
+      <td>Bombay Dyeing &amp; Mfg. Co. Ltd.,</td>
+      <td>BOMDYEING</td>
+      <td>BOMBAY DYEING &amp; MFG.CO.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE032A01023</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>500023</td>
+      <td>Asian Hotels (North) Limited</td>
+      <td>ASIANHOTNR</td>
+      <td>Asian Hotels (North) Limited</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE363A01022</td>
+      <td>Hotels &amp; Resorts</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Hotels &amp; Resorts</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>500027</td>
+      <td>Atul Limited.,</td>
+      <td>ATUL</td>
+      <td>ATUL LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE100A01010</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>500028</td>
+      <td>ATV Projects India Ltd</td>
+      <td>ATVPR</td>
+      <td>ATV PROJECTS INDIA LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE447A01015</td>
+      <td>Industrial Equipments</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Equipments</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>500031</td>
+      <td>Bajaj Electricals Ltd.,</td>
+      <td>BAJAJELEC</td>
+      <td>BAJAJ ELECTRICALS LTD.-$</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE193E01025</td>
+      <td>Household Appliances</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Household Appliances</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>500032</td>
+      <td>Bajaj Hindusthan Sugar Limited</td>
+      <td>BAJAJHIND</td>
+      <td>Bajaj Hindusthan Sugar Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE306A01021</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>500033</td>
+      <td>Force Motors Limited</td>
+      <td>FORCEMOT</td>
+      <td>FORCE MOTORS LTD.-$</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE451A01017</td>
+      <td>Passenger Cars &amp; Utility Vehicles</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Automobiles</td>
+      <td>Passenger Cars &amp; Utility Vehicles</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>500034</td>
+      <td>Bajaj Finance Limited</td>
+      <td>BAJFINANCE</td>
+      <td>Bajaj Finance Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE296A01024</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>500038</td>
+      <td>Balrampur Chini Mills Ltd.</td>
+      <td>BALRAMCHIN</td>
+      <td>BALRAMPUR CHINI MILLS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE119A01028</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>500039</td>
+      <td>Banco Products (India) Ltd.,</td>
+      <td>BANCOINDIA</td>
+      <td>BANCO PRODUCTS (INDIA) LTD.-$</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE213C01025</td>
+      <td>Auto Components &amp; Equipments</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Auto Components &amp; Equipments</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>500040</td>
+      <td>Century Textiles &amp; Industries Ltd.,</td>
+      <td>CENTURYTEX</td>
+      <td>CENTURY TEXTILES &amp; INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE055A01016</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>500041</td>
+      <td>Bannari Amman Sugars Ltd.,</td>
+      <td>BANARISUG</td>
+      <td>BANNARI AMMAN SUGARS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE459A01010</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>500042</td>
+      <td>BASF India Ltd</td>
+      <td>BASF</td>
+      <td>BASF INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE373A01013</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>500043</td>
+      <td>Bata India Limited</td>
+      <td>BATAINDIA</td>
+      <td>BATA INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE176A01028</td>
+      <td>Footwear</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Footwear</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>500048</td>
+      <td>BEML Ltd</td>
+      <td>BEML</td>
+      <td>BEML LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE258A01016</td>
+      <td>Construction Vehicles</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Agricultural, Commercial &amp; Construction Vehicles</td>
+      <td>Construction Vehicles</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>500049</td>
+      <td>Bharat Electronics Ltd.,</td>
+      <td>BEL</td>
+      <td>BHARAT ELECTRONICS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE263A01024</td>
+      <td>Aerospace &amp; Defense</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Aerospace &amp; Defense</td>
+      <td>Aerospace &amp; Defense</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>500052</td>
+      <td>Bhansali Engineering Polymers Ltd.,</td>
+      <td>BEPL</td>
+      <td>BHANSALI ENGINEERING POLYMERS LTD.-$</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE922A01025</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>500058</td>
+      <td>Bihar Sponge Iron Ltd</td>
+      <td>BIHSPONG</td>
+      <td>BIHAR SPONGE IRON LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE819C01011</td>
+      <td>Sponge Iron</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Sponge Iron</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>500060</td>
+      <td>Birla Cable Limited</td>
+      <td>BIRLACABLE</td>
+      <td>Birla Cable Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE800A01015</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>500067</td>
+      <td>Blue Star Ltd</td>
+      <td>BLUESTARCO</td>
+      <td>BLUE STAR LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE472A01039</td>
+      <td>Air Conditioner</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Air Conditioner</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>500068</td>
+      <td>Disa India Ltd.</td>
+      <td>DISAQ</td>
+      <td>DISA INDIA LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE131C01011</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>500069</td>
+      <td>QUEST CAPITAL MARKETS LIMITED</td>
+      <td>QUESTCAP</td>
+      <td>Quest Capital Markets Ltd</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE418C01012</td>
+      <td>Other Capital Market related Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Capital Markets</td>
+      <td>Other Capital Market related Services</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>500074</td>
+      <td>BPL Ltd.,</td>
+      <td>BPL</td>
+      <td>BPL LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE110A01019</td>
+      <td>Consumer Electronics</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Electronics</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>500078</td>
+      <td>ORIENTAL AROMATICS LIMITED</td>
+      <td>OAL</td>
+      <td>Oriental Aromatics Ltd-$</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE959C01023</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>500083</td>
+      <td>Century Extrusions Ltd.,</td>
+      <td>CENTEXT</td>
+      <td>CENTURY EXTRUSIONS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE281A01026</td>
+      <td>Aluminium- Copper &amp; Zinc Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Aluminium, Copper &amp; Zinc Products</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>500084</td>
+      <td>CESC Limited,</td>
+      <td>CESC</td>
+      <td>CESC LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE486A01021</td>
+      <td>Electric Utilities</td>
+      <td>Equity</td>
+      <td>Utilities</td>
+      <td>Power</td>
+      <td>Power</td>
+      <td>Electric Utilities</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>500085</td>
+      <td>Chambal Fertilisers &amp; Chemicals Ltd</td>
+      <td>CHAMBLFERT</td>
+      <td>CHAMBAL FERTILISERS &amp; CHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE085A01013</td>
+      <td>Fertilizers</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Fertilizers &amp; Agrochemicals</td>
+      <td>Fertilizers</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>500086</td>
+      <td>Exide Industries Ltd.,</td>
+      <td>EXIDEIND</td>
+      <td>EXIDE INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE302A01020</td>
+      <td>Batteries - Automobile</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Batteries - Automobile</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>500087</td>
+      <td>Cipla Ltd.,</td>
+      <td>CIPLA</td>
+      <td>CIPLA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE059A01026</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>500089</td>
+      <td>DIC India Ltd</td>
+      <td>DICIND</td>
+      <td>DIC INDIA LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE303A01010</td>
+      <td>Printing Inks</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Printing Inks</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>500092</td>
+      <td>CRISIL Ltd.</td>
+      <td>CRISIL</td>
+      <td>CRISIL LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE007A01025</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>500093</td>
+      <td>CG Power and Industrial Solutions Limited</td>
+      <td>CGPOWER</td>
+      <td>CG Power and Industrial Solutions Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE067A01029</td>
+      <td>Heavy Electrical Equipment</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Electrical Equipment</td>
+      <td>Heavy Electrical Equipment</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>500096</td>
+      <td>Dabur India Ltd.</td>
+      <td>DABUR</td>
+      <td>DABUR INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE016A01026</td>
+      <td>Personal Care</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Personal Products</td>
+      <td>Personal Care</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>500097</td>
+      <td>Dalmia Bharat Sugar and Industries Ltd</td>
+      <td>DALMIASUG</td>
+      <td>Dalmia Bharat Sugar and Industries Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE495A01022</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>500101</td>
+      <td>Arvind Ltd.,</td>
+      <td>ARVIND</td>
+      <td>ARVIND LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE034A01011</td>
+      <td>Garments &amp; Apparels</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Garments &amp; Apparels</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>500102</td>
+      <td>Ballarpur Industries Ltd.,</td>
+      <td>BALLARPUR</td>
+      <td>BALLARPUR INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>Z</td>
+      <td>2.0</td>
+      <td>INE294A01037</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>500103</td>
+      <td>Bharat Heavy Electricals Ltd.,</td>
+      <td>BHEL</td>
+      <td>BHARAT HEAVY ELECTRICALS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE257A01026</td>
+      <td>Heavy Electrical Equipment</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Electrical Equipment</td>
+      <td>Heavy Electrical Equipment</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>500104</td>
+      <td>Hindustan Petroleum Corporation Ltd</td>
+      <td>HINDPETRO</td>
+      <td>HINDUSTAN PETROLEUM CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE094A01015</td>
+      <td>Refineries &amp; Marketing</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Petroleum Products</td>
+      <td>Refineries &amp; Marketing</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>500106</td>
+      <td>IFCI Ltd.</td>
+      <td>IFCI</td>
+      <td>IFCI LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE039A01010</td>
+      <td>Financial Institution</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Financial Institution</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>500108</td>
+      <td>Mahanagar Telephone Nigam Ltd.,</td>
+      <td>MTNL</td>
+      <td>MAHANAGAR TELEPHONE NIGAM LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE153A01019</td>
+      <td>Telecom - Cellular &amp; Fixed line services</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom - Services</td>
+      <td>Telecom - Cellular &amp; Fixed line services</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>500109</td>
+      <td>Mangalore Refinery &amp; Petrochemicals</td>
+      <td>MRPL</td>
+      <td>MANGALORE REFINERY &amp; PETROCHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE103A01014</td>
+      <td>Refineries &amp; Marketing</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Petroleum Products</td>
+      <td>Refineries &amp; Marketing</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>500110</td>
+      <td>Chennai Petroleum Corporation Ltd.</td>
+      <td>CHENNPETRO</td>
+      <td>CHENNAI PETROLEUM CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE178A01016</td>
+      <td>Refineries &amp; Marketing</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Petroleum Products</td>
+      <td>Refineries &amp; Marketing</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>500111</td>
+      <td>Reliance Capital Limited</td>
+      <td>RELCAPITAL</td>
+      <td>RELIANCE CAPITAL LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>10.0</td>
+      <td>INE013A01015</td>
+      <td>Investment Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Investment Company</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>500112</td>
+      <td>State Bank Of India,</td>
+      <td>SBIN</td>
+      <td>STATE BANK OF INDIA</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE062A01020</td>
+      <td>Public Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Public Sector Bank</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>500113</td>
+      <td>Steel Authority of India Ltd.,</td>
+      <td>SAIL</td>
+      <td>STEEL AUTHORITY OF INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE114A01011</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>500114</td>
+      <td>Titan Company Limited</td>
+      <td>TITAN</td>
+      <td>Titan Company Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE280A01028</td>
+      <td>Gems- Jewellery And Watches</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Gems, Jewellery And Watches</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>500116</td>
+      <td>IDBI Bank Ltd</td>
+      <td>IDBI</td>
+      <td>IDBI BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE008A01015</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>500117</td>
+      <td>DCW Ltd.,</td>
+      <td>DCW</td>
+      <td>DCW LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE500A01029</td>
+      <td>Petrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Petrochemicals</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>500119</td>
+      <td>Dhampur Sugar Mills Ltd.,</td>
+      <td>DHAMPURSUG</td>
+      <td>DHAMPUR SUGAR MILLS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE041A01016</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>500120</td>
+      <td>Diamines &amp; Chemicals Ltd.,</td>
+      <td>DIAMINESQ</td>
+      <td>DIAMINES &amp; CHEMICALS LTD.-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE591D01014</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>500123</td>
+      <td>Elantas Beck India Ltd</td>
+      <td>ELANTAS</td>
+      <td>ELANTAS BECK INDIA LTD.-$</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE280B01018</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>500124</td>
+      <td>Dr. Reddy's Laboratories Ltd.,</td>
+      <td>DRREDDY</td>
+      <td>DR.REDDY'S LABORATORIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE089A01023</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>500125</td>
+      <td>E.I.D. Parry (India) Ltd.,</td>
+      <td>EIDPARRY</td>
+      <td>E.I.D.-PARRY (INDIA) LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE126A01031</td>
+      <td>Other Agricultural Products</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Other Agricultural Products</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>500126</td>
+      <td>PROCTER &amp; GAMBLE HEALTH LIMITED</td>
+      <td>PGHL</td>
+      <td>Procter &amp; Gamble Health Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE199A01012</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>500128</td>
+      <td>Electrosteel Castings Ltd.,</td>
+      <td>ELECTCAST</td>
+      <td>ELECTROSTEEL CASTINGS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE086A01029</td>
+      <td>Castings &amp; Forgings</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Castings &amp; Forgings</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>500133</td>
+      <td>Esab India Ltd.</td>
+      <td>ESABINDIA</td>
+      <td>ESAB INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE284A01012</td>
+      <td>Other Industrial Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Other Industrial Products</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>500135</td>
+      <td>EPL LIMITED</td>
+      <td>EPL</td>
+      <td>EPL Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE255A01020</td>
+      <td>Packaging</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Packaging</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>500136</td>
+      <td>Ester Industries Ltd.,</td>
+      <td>ESTER</td>
+      <td>ESTER INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE778B01029</td>
+      <td>Packaging</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Packaging</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>500142</td>
+      <td>FGP Ltd</td>
+      <td>FGP</td>
+      <td>FGP LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE512A01016</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>500143</td>
+      <td>P.H. Capital Ltd.</td>
+      <td>PHCAP</td>
+      <td>PH CAPITAL LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE160F01013</td>
+      <td>Investment Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Investment Company</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>500144</td>
+      <td>Finolex Cables Ltd.,</td>
+      <td>FINCABLES</td>
+      <td>FINOLEX CABLES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE235A01022</td>
+      <td>Cables - Electricals</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Cables - Electricals</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>500147</td>
+      <td>JOHN COCKERILL INDIA LIMITED</td>
+      <td>COCKERILL</td>
+      <td>John Cockerill India Ltd-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE515A01019</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>500148</td>
+      <td>Uflex Limited</td>
+      <td>UFLEX</td>
+      <td>UFLEX LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE516A01017</td>
+      <td>Packaging</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Packaging</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>500150</td>
+      <td>Foseco India Ltd</td>
+      <td>FOSECOIND</td>
+      <td>FOSECO INDIA LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE519A01011</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>500151</td>
+      <td>Golden Tobacco Ltd.</td>
+      <td>GOLDENTOBC</td>
+      <td>GOLDEN TOBACCO LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE973A01010</td>
+      <td>Residential- Commercial Projects</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Realty</td>
+      <td>Realty</td>
+      <td>Residential, Commercial Projects</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>500153</td>
+      <td>Ganesh Benzoplast Ltd.,</td>
+      <td>GANESHBE</td>
+      <td>GANESH BENZOPLAST LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE388A01029</td>
+      <td>Oil Storage &amp; Transportation</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Oil</td>
+      <td>Oil Storage &amp; Transportation</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>500159</td>
+      <td>Metroglobal Limited</td>
+      <td>METROGLOBL</td>
+      <td>Metroglobal Limited</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE085D01033</td>
+      <td>Trading &amp; Distributors</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Trading &amp; Distributors</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>500160</td>
+      <td>GTL Ltd</td>
+      <td>GTL</td>
+      <td>GTL LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE043A01012</td>
+      <td>Other Telecom Services</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom - Services</td>
+      <td>Other Telecom Services</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>500163</td>
+      <td>Godfrey Phillips India Ltd.,</td>
+      <td>GODFRYPHLP</td>
+      <td>GODFREY PHILLIPS INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE260B01028</td>
+      <td>Cigarettes &amp; Tobacco Products</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Cigarettes &amp; Tobacco Products</td>
+      <td>Cigarettes &amp; Tobacco Products</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>500164</td>
+      <td>Godrej Industries Ltd.</td>
+      <td>GODREJIND</td>
+      <td>GODREJ INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE233A01035</td>
+      <td>Animal Feed</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Food Products</td>
+      <td>Animal Feed</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>500165</td>
+      <td>Kansai Nerolac Paints</td>
+      <td>KANSAINER</td>
+      <td>KANSAI NEROLAC PAINTS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE531A01024</td>
+      <td>Paints</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Paints</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>500166</td>
+      <td>Goodricke Group Ltd.,</td>
+      <td>GOODRICKE</td>
+      <td>GOODRICKE GROUP LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE300A01016</td>
+      <td>Tea &amp; Coffee</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Tea &amp; Coffee</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>500168</td>
+      <td>Goodyear India Ltd.,</td>
+      <td>GOODYEAR</td>
+      <td>GOODYEAR INDIA LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE533A01012</td>
+      <td>Tyres &amp; Rubber Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Tyres &amp; Rubber Products</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>500170</td>
+      <td>GTN Industries Limited</td>
+      <td>GTNINDS</td>
+      <td>GTN INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE537A01013</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>500171</td>
+      <td>GHCL Ltd.</td>
+      <td>GHCL</td>
+      <td>GHCL LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE539A01019</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>500173</td>
+      <td>GFL LIMITED</td>
+      <td>GFLLIMITED</td>
+      <td>GFL Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE538A01037</td>
+      <td>Holding Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Holding Company</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>500174</td>
+      <td>Gujarat Lease Financing Limited,</td>
+      <td>GLFL</td>
+      <td>GUJARAT LEASE FINANCING LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>10.0</td>
+      <td>INE540A01017</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>500179</td>
+      <td>HCL Infosystems Ltd</td>
+      <td>HCL-INSYS</td>
+      <td>HCL INFOSYSTEMS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE236A01020</td>
+      <td>Computers Hardware &amp; Equipments</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Hardware</td>
+      <td>Computers Hardware &amp; Equipments</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>500180</td>
+      <td>HDFC Bank Ltd.</td>
+      <td>HDFCBANK</td>
+      <td>HDFC Bank Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE040A01034</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>500182</td>
+      <td>Hero MotoCorp Limited</td>
+      <td>HEROMOTOCO</td>
+      <td>HERO MOTOCORP LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE158A01026</td>
+      <td>2/3 Wheelers</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Automobiles</td>
+      <td>2/3 Wheelers</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>500183</td>
+      <td>HFCL LIMITED</td>
+      <td>HFCL</td>
+      <td>HFCL Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE548A01028</td>
+      <td>Telecom - Infrastructure</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom - Services</td>
+      <td>Telecom - Infrastructure</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>500184</td>
+      <td>Himadri Speciality Chemical Ltd.</td>
+      <td>HSCL</td>
+      <td>Himadri Speciality Chemical Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE019C01026</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>500185</td>
+      <td>Hindustan Construction Co. Ltd.,</td>
+      <td>HCC</td>
+      <td>HINDUSTAN CONSTRUCTION CO.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE549A01026</td>
+      <td>Engineering- Designing &amp; Construction</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Construction</td>
+      <td>Construction</td>
+      <td>Engineering, Designing &amp; Construction</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>500186</td>
+      <td>Hindustan Oil Exploration Co. Ltd.</td>
+      <td>HINDOILEXP</td>
+      <td>HINDUSTAN OIL EXPLORATION CO.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE345A01011</td>
+      <td>Oil Exploration &amp; Production</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Oil</td>
+      <td>Oil Exploration &amp; Production</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>500187</td>
+      <td>AGI GREENPAC LIMITED</td>
+      <td>AGI</td>
+      <td>Agi Greenpac Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE415A01038</td>
+      <td>Packaging</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Packaging</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>500188</td>
+      <td>Hindustan Zinc Ltd.,</td>
+      <td>HINDZINC</td>
+      <td>HINDUSTAN ZINC LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE267A01025</td>
+      <td>Zinc</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Non - Ferrous Metals</td>
+      <td>Zinc</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>500189</td>
+      <td>NXTDIGITAL LIMITED</td>
+      <td>NXTDIGITAL</td>
+      <td>Nxtdigital Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE353A01023</td>
+      <td>TV Broadcasting &amp; Software Production</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Media, Entertainment &amp; Publication</td>
+      <td>Entertainment</td>
+      <td>TV Broadcasting &amp; Software Production</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>500191</td>
+      <td>HMT Limited</td>
+      <td>HMT</td>
+      <td>HMT LTD.</td>
+      <td>Active</td>
+      <td>Z</td>
+      <td>10.0</td>
+      <td>INE262A01018</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>500192</td>
+      <td>Prag Bosimi Synthetics Ltd.</td>
+      <td>PRAGBOS</td>
+      <td>PRAG BOSIMI SYNTHETICS LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE962B01011</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>500193</td>
+      <td>HLV LIMITED</td>
+      <td>HLVLTD</td>
+      <td>HLV Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE102A01024</td>
+      <td>Hotels &amp; Resorts</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Hotels &amp; Resorts</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>500199</td>
+      <td>IG Petrochemicals Ltd</td>
+      <td>IGPL</td>
+      <td>I G PETROCHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE204A01010</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>500201</td>
+      <td>India Glycols Ltd</td>
+      <td>INDIAGLYCO</td>
+      <td>INDIA GLYCOLS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE560A01015</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>500202</td>
+      <td>India Lease Devl. Ltd.,</td>
+      <td>INDLEASE</td>
+      <td>INDIA LEASE DEVELOPMENT LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE333C01013</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>500206</td>
+      <td>Margo Finance Limited</td>
+      <td>MARGOFIN</td>
+      <td>Margo Finance Limited</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE680B01019</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>500207</td>
+      <td>Indo Rama Synthetics (India) Ltd.,</td>
+      <td>INDORAMA</td>
+      <td>INDO RAMA SYNTHETICS (INDIA) LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE156A01020</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>500209</td>
+      <td>Infosys Ltd</td>
+      <td>INFY</td>
+      <td>INFOSYS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE009A01021</td>
+      <td>Computers - Software &amp; Consulting</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Software</td>
+      <td>Computers - Software &amp; Consulting</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>500210</td>
+      <td>Ingersoll-Rand (India) Ltd.</td>
+      <td>INGERRAND</td>
+      <td>INGERSOLL-RAND (INDIA) LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE177A01018</td>
+      <td>Compressors &amp; Pumps</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Compressors &amp; Pumps</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>500211</td>
+      <td>Insilco Ltd</td>
+      <td>INSILCO</td>
+      <td>INSILCO LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE901A01011</td>
+      <td>Industrial Minerals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Minerals &amp; Mining</td>
+      <td>Industrial Minerals</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>500213</td>
+      <td>International Travel House Ltd</td>
+      <td>ITHL</td>
+      <td>INTERNATIONAL TRAVEL HOUSE LTD.-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE262B01016</td>
+      <td>Tour- Travel Related Services</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Tour, Travel Related Services</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>500214</td>
+      <td>Ion Exchange (India) Ltd</td>
+      <td>IONEXCHANG</td>
+      <td>ION EXCHANGE (INDIA) LTD.-$</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE570A01014</td>
+      <td>Engineering- Designing &amp; Construction</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Construction</td>
+      <td>Construction</td>
+      <td>Engineering, Designing &amp; Construction</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>500215</td>
+      <td>Agro Tech Foods Ltd</td>
+      <td>ATFL</td>
+      <td>AGRO TECH FOODS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE209A01019</td>
+      <td>Edible Oil</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Edible Oil</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>500219</td>
+      <td>Jain Irrigation Systems Ltd.,</td>
+      <td>JISLJALEQS</td>
+      <td>JAIN IRRIGATION SYSTEMS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE175A01038</td>
+      <td>Plastic Products - Industrial</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Plastic Products - Industrial</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>500220</td>
+      <td>Jasch Industries Ltd.</td>
+      <td>JASCH</td>
+      <td>JASCH INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE711C01010</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>500223</td>
+      <td>JCT Ltd</td>
+      <td>JCTLTD</td>
+      <td>JCT LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>2.5</td>
+      <td>INE945A01026</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>500227</td>
+      <td>Jindal Poly Films Ltd.</td>
+      <td>JINDALPOLY</td>
+      <td>JINDAL POLY FILMS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE197D01010</td>
+      <td>Packaging</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Packaging</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>500228</td>
+      <td>JSW Steel Limited</td>
+      <td>JSWSTEEL</td>
+      <td>JSW STEEL LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE019A01038</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>500231</td>
+      <td>Umang Dairies Limited</td>
+      <td>UMANGDAIR</td>
+      <td>UMANG DAIRIES LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE864B01027</td>
+      <td>Dairy Products</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Food Products</td>
+      <td>Dairy Products</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>500233</td>
+      <td>Kajaria Ceramics Ltd</td>
+      <td>KAJARIACER</td>
+      <td>KAJARIA CERAMICS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE217B01036</td>
+      <td>Furniture- Home Furnishing- Flooring</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Furniture, Home Furnishing, Flooring</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>500234</td>
+      <td>Kakatiya Cement Sugar &amp; Industries Ltd.</td>
+      <td>KAKATCEM</td>
+      <td>KAKATIYA CEMENT SUGAR &amp; INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE437B01014</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>500235</td>
+      <td>Kalyani Steels Ltd</td>
+      <td>KSL</td>
+      <td>KALYANI STEELS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE907A01026</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>500236</td>
+      <td>Kanel Industries Limited</td>
+      <td>KANELIND</td>
+      <td>Kanel Industries Limited</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE252C01015</td>
+      <td>Trading &amp; Distributors</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Trading &amp; Distributors</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>500238</td>
+      <td>Whirlpool of India Ltd</td>
+      <td>WHIRLPOOL</td>
+      <td>WHIRLPOOL OF INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE716A01013</td>
+      <td>Household Appliances</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Household Appliances</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>500239</td>
+      <td>K.G.Denim Ltd</td>
+      <td>KGDENIM</td>
+      <td>KG DENIM LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE104A01012</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>500240</td>
+      <td>Kinetic Engineering Ltd.,</td>
+      <td>KINETICENG</td>
+      <td>KINETIC ENGINEERING LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE266B01017</td>
+      <td>Auto Components &amp; Equipments</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Auto Components &amp; Equipments</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>500241</td>
+      <td>Kirloskar Brothers Ltd.,</td>
+      <td>KIRLOSBROS</td>
+      <td>KIRLOSKAR BROTHERS LTD.-$</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE732A01036</td>
+      <td>Compressors &amp; Pumps</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Compressors &amp; Pumps</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>500243</td>
+      <td>Kirloskar Industries Ltd</td>
+      <td>KIRLOSIND</td>
+      <td>Kirloskar Industries Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE250A01039</td>
+      <td>Castings &amp; Forgings</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Castings &amp; Forgings</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>500245</td>
+      <td>Kirloskar Ferrous Industries Ltd.</td>
+      <td>KIRLFER</td>
+      <td>KIRLOSKAR FERROUS INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE884B01025</td>
+      <td>Pig Iron</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Pig Iron</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>500246</td>
+      <td>Envair Electrodyne Ltd.</td>
+      <td>ENVAIREL</td>
+      <td>ENVAIR ELECTRODYNE LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE601C01013</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>500247</td>
+      <td>Kotak Mahindra Bank Ltd.</td>
+      <td>KOTAKBANK</td>
+      <td>KOTAK MAHINDRA BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE237A01028</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>500248</td>
+      <td>KRISHNA FILAMENT INDUSTRIES LIMITED</td>
+      <td>KRIFILIND</td>
+      <td>Krishna Filament Industries Ltd</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE073A01019</td>
+      <td>Plastic Products - Industrial</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Plastic Products - Industrial</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>500249</td>
+      <td>KSB LIMITED</td>
+      <td>KSB</td>
+      <td>KSB Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE999A01015</td>
+      <td>Compressors &amp; Pumps</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Compressors &amp; Pumps</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>500250</td>
+      <td>L.g.Balkrishnan &amp; Bros. Ltd.</td>
+      <td>LGBBROSLTD</td>
+      <td>L.G.BALAKRISHNAN &amp; BROS.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE337A01034</td>
+      <td>Auto Components &amp; Equipments</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Auto Components &amp; Equipments</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>500251</td>
+      <td>Trent Ltd [Lakme Ltd]</td>
+      <td>TRENT</td>
+      <td>TRENT LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE849A01020</td>
+      <td>Speciality Retail</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Retailing</td>
+      <td>Speciality Retail</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>500252</td>
+      <td>Lakshmi Machine Works Ltd.,</td>
+      <td>LAXMIMACH</td>
+      <td>LAKSHMI MACHINE WORKS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE269B01029</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>500253</td>
+      <td>Lic Housing Finance Ltd.</td>
+      <td>LICHSGFIN</td>
+      <td>LIC HOUSING FINANCE LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE115A01026</td>
+      <td>Housing Finance Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Housing Finance Company</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>500257</td>
+      <td>Lupin Ltd</td>
+      <td>LUPIN</td>
+      <td>LUPIN LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE326A01037</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>500259</td>
+      <td>Lyka Labs Ltd.,</td>
+      <td>LYKALABS</td>
+      <td>LYKA LABS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE933A01014</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>500260</td>
+      <td>The Ramco Cements Limited</td>
+      <td>RAMCOCEM</td>
+      <td>The Ramco Cements Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE331A01037</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>500264</td>
+      <td>Mafatlal Industries Ltd.,</td>
+      <td>MAFATIND</td>
+      <td>MAFATLAL INDUSTRIES LTD.-$</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE270B01027</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>500265</td>
+      <td>Maharashtra Seamless Ltd.</td>
+      <td>MAHSEAMLES</td>
+      <td>MAHARASHTRA SEAMLESS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE271B01025</td>
+      <td>Iron &amp; Steel Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Iron &amp; Steel Products</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>500266</td>
+      <td>Maharashtra Scooters Ltd.,</td>
+      <td>MAHSCOOTER</td>
+      <td>MAHARASHTRA SCOOTERS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE288A01013</td>
+      <td>Investment Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Investment Company</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>500267</td>
+      <td>Majestic Auto Ltd.,</td>
+      <td>MAJESAUT</td>
+      <td>MAJESTIC AUTO LTD.-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE201B01022</td>
+      <td>Diversified Commercial Services</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Diversified Commercial Services</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>500268</td>
+      <td>Manali Petrochemicals Ltd.,</td>
+      <td>MANALIPETC</td>
+      <td>MANALI PETROCHEMICAL LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE201A01024</td>
+      <td>Petrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Petrochemicals</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>500270</td>
+      <td>Baroda Rayon Corpn. Ltd.,</td>
+      <td>BARODARY</td>
+      <td>BARODA RAYON CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE461A01024</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>500271</td>
+      <td>Max Financial Services Limited</td>
+      <td>MFSL</td>
+      <td>Max Financial Services Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE180A01020</td>
+      <td>Life Insurance</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Insurance</td>
+      <td>Life Insurance</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>500277</td>
+      <td>Mid India Industries Limited</td>
+      <td>MIDINDIA</td>
+      <td>MID INDIA INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE401C01018</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>500279</td>
+      <td>Mirc Electronics Ltd</td>
+      <td>MIRCELECTR</td>
+      <td>MIRC ELECTRONICS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE831A01028</td>
+      <td>Consumer Electronics</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Electronics</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>500280</td>
+      <td>Century Enka Ltd.,</td>
+      <td>CENTENKA</td>
+      <td>CENTURY ENKA LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE485A01015</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>500284</td>
+      <td>Lords Chloro Alkali Ltd</td>
+      <td>LORDSCHLO</td>
+      <td>LORDS CHLORO ALKALI LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE846D01012</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>500285</td>
+      <td>SpiceJet Limited</td>
+      <td>SPICEJET</td>
+      <td>SPICEJET LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE285B01017</td>
+      <td>Airline</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Transport Services</td>
+      <td>Airline</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>500288</td>
+      <td>Morepen Laboratories Ltd.</td>
+      <td>MOREPENLAB</td>
+      <td>MOREPEN LABORATORIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE083A01026</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>500290</td>
+      <td>M.R.F. Ltd.,</td>
+      <td>MRF</td>
+      <td>MRF LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE883A01011</td>
+      <td>Tyres &amp; Rubber Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Tyres &amp; Rubber Products</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>500292</td>
+      <td>HeidelbergCement  India Limited</td>
+      <td>HEIDELBERG</td>
+      <td>HEIDELBERGCEMENT INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE578A01017</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>500294</td>
+      <td>NCC Limited</td>
+      <td>NCC</td>
+      <td>NCC Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE868B01028</td>
+      <td>Civil Construction</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Construction</td>
+      <td>Construction</td>
+      <td>Civil Construction</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>500295</td>
+      <td>Vedanta Limited</td>
+      <td>VEDL</td>
+      <td>Vedanta Limited</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE205A01025</td>
+      <td>Diversified Metals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Diversified Metals</td>
+      <td>Diversified Metals</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>500296</td>
+      <td>Nahar Spinning Mills Ltd.,</td>
+      <td>NAHARSPING</td>
+      <td>NAHAR SPINNING MILLS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE290A01027</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>500298</td>
+      <td>National Peroxide Ltd.</td>
+      <td>NATPEROX</td>
+      <td>NATIONAL PEROXIDE LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE585A01020</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>500300</td>
+      <td>Grasim Industries Ltd.,</td>
+      <td>GRASIM</td>
+      <td>GRASIM INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE047A01021</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>500302</td>
+      <td>Piramal Enterprises Limited</td>
+      <td>PEL</td>
+      <td>PIRAMAL ENTERPRISES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE140A01024</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>500304</td>
+      <td>NIIT Ltd.,</td>
+      <td>NIITLTD</td>
+      <td>NIIT LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE161A01038</td>
+      <td>Education</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Other Consumer Services</td>
+      <td>Education</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>500306</td>
+      <td>Jaykay Enterprises Limited</td>
+      <td>JAYKAY</td>
+      <td>JAYKAY ENTERPRISES LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>1.0</td>
+      <td>INE903A01025</td>
+      <td>Depositories- Clearing Houses and Other Intermediaries</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Capital Markets</td>
+      <td>Depositories, Clearing Houses and Other Intermediaries</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>500307</td>
+      <td>Nirlon Limited,</td>
+      <td>NIRLON</td>
+      <td>NIRLON LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE910A01012</td>
+      <td>Diversified Commercial Services</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Diversified Commercial Services</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>500312</td>
+      <td>Oil And Natural Gas Corporation Ltd</td>
+      <td>ONGC</td>
+      <td>Oil and Natural Gas Corporation Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE213A01029</td>
+      <td>Oil Exploration &amp; Production</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Oil</td>
+      <td>Oil Exploration &amp; Production</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>500313</td>
+      <td>Oil Country Tubular Ltd.</td>
+      <td>OILCOUNTUB</td>
+      <td>OIL COUNTRY TUBULAR LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>10.0</td>
+      <td>INE591A01010</td>
+      <td>Oil Equipment &amp; Services</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Oil</td>
+      <td>Oil Equipment &amp; Services</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>500314</td>
+      <td>Oriental Hotels Ltd.,</td>
+      <td>ORIENTHOT</td>
+      <td>ORIENTAL HOTELS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE750A01020</td>
+      <td>Hotels &amp; Resorts</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Hotels &amp; Resorts</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>500317</td>
+      <td>Oswal Agro Mills Ltd.,</td>
+      <td>OSWALAGRO</td>
+      <td>OSWAL AGRO MILLS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE142A01012</td>
+      <td>Trading &amp; Distributors</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Trading &amp; Distributors</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>500319</td>
+      <td>Indian Sucrose Ltd.</td>
+      <td>INDSUCR</td>
+      <td>INDIAN SUCROSE LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE557C01017</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>500325</td>
+      <td>Reliance Industries Ltd</td>
+      <td>RELIANCE</td>
+      <td>RELIANCE INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE002A01018</td>
+      <td>Refineries &amp; Marketing</td>
+      <td>Equity</td>
+      <td>Energy</td>
+      <td>Oil, Gas &amp; Consumable Fuels</td>
+      <td>Petroleum Products</td>
+      <td>Refineries &amp; Marketing</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>500327</td>
+      <td>Pil Italica Lifestyle Limited</td>
+      <td>PILITA</td>
+      <td>Pil Italica Lifestyle Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>1.0</td>
+      <td>INE600A01035</td>
+      <td>Plastic Products - Consumer</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Plastic Products - Consumer</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>500330</td>
+      <td>Raymond Limited</td>
+      <td>RAYMOND</td>
+      <td>RAYMOND LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE301A01014</td>
+      <td>Garments &amp; Apparels</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Garments &amp; Apparels</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>500331</td>
+      <td>Pidilite Industries Ltd.</td>
+      <td>PIDILITIND</td>
+      <td>PIDILITE INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE318A01026</td>
+      <td>Specialty Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Specialty Chemicals</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>500333</td>
+      <td>Pix Transmissions Ltd.,</td>
+      <td>PIXTRANS</td>
+      <td>PIX TRANSMISSIONS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE751B01018</td>
+      <td>Rubber</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Rubber</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>500335</td>
+      <td>Birla Corporation Ltd.</td>
+      <td>BIRLACORPN</td>
+      <td>BIRLA CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE340A01012</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>500336</td>
+      <td>Surya Roshni Ltd.,</td>
+      <td>SURYAROSNI</td>
+      <td>SURYA ROSHNI LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE335A01012</td>
+      <td>Iron &amp; Steel Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Iron &amp; Steel Products</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>500337</td>
+      <td>Prime Securities Ltd.</td>
+      <td>PRIMESECU</td>
+      <td>PRIME SECURITIES LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE032B01021</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>500338</td>
+      <td>PRISM JOHNSON LIMITED.</td>
+      <td>PRSMJOHNSN</td>
+      <td>Prism Johnson Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE010A01011</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>500339</td>
+      <td>Rain Industries Limited</td>
+      <td>RAIN</td>
+      <td>Rain Industries Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE855B01025</td>
+      <td>Petrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Petrochemicals</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>500343</td>
+      <td>AMJ LAND HOLDINGS LIMITED</td>
+      <td>AMJLAND</td>
+      <td>AMJ Land Holdings Ltd</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE606A01024</td>
+      <td>Residential- Commercial Projects</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Realty</td>
+      <td>Realty</td>
+      <td>Residential, Commercial Projects</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>500346</td>
+      <td>Punjab Communications Limited</td>
+      <td>PUNJCOMMU</td>
+      <td>PUNJAB COMMUNICATIONS LTD.-$</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE609A01010</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+      <td>Telecom -  Equipment &amp; Accessories</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>500350</td>
+      <td>RSWM Limited</td>
+      <td>RSWM</td>
+      <td>RSWM LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE611A01016</td>
+      <td>Other Textile Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Textiles</td>
+      <td>Textiles &amp; Apparels</td>
+      <td>Other Textile Products</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>500354</td>
+      <td>Rajshree Sugars &amp; Chemicals Ltd.,</td>
+      <td>RAJSREESUG</td>
+      <td>RAJSHREE SUGARS &amp; CHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE562B01019</td>
+      <td>Sugar</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Sugar</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>500355</td>
+      <td>Rallis India Ltd</td>
+      <td>RALLIS</td>
+      <td>RALLIS INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE613A01020</td>
+      <td>Pesticides &amp; Agrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Fertilizers &amp; Agrochemicals</td>
+      <td>Pesticides &amp; Agrochemicals</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>500356</td>
+      <td>Shree Rama Newsprint Limited</td>
+      <td>RAMANEWS</td>
+      <td>SHREE RAMA NEWSPRINT LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE278B01020</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>500357</td>
+      <td>Rama Paper Mills Limited,</td>
+      <td>RAMAPPR-B</td>
+      <td>RAMA PAPER MILLS LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE425E01013</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>500358</td>
+      <td>Rama Petrochemicals Ltd</td>
+      <td>RAMAPETRO</td>
+      <td>RAMA PETROCHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE783A01013</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>500360</td>
+      <td>Rapicut Carbides Ltd.,</td>
+      <td>RAPICUT</td>
+      <td>RAPICUT CARBIDES LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE350D01015</td>
+      <td>Industrial Machinery</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Manufacturing</td>
+      <td>Industrial Machinery</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>500365</td>
+      <td>WELSPUN SPECIALTY SOLUTIONS LIMITED</td>
+      <td>WELSPLSOL</td>
+      <td>Welspun Specialty Solutions Ltd</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>6.0</td>
+      <td>INE731F01037</td>
+      <td>Iron &amp; Steel Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Iron &amp; Steel Products</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>500366</td>
+      <td>Rolta India Ltd.,</td>
+      <td>ROLTA</td>
+      <td>ROLTA INDIA LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE293A01013</td>
+      <td>IT Enabled Services</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Services</td>
+      <td>IT Enabled Services</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>500367</td>
+      <td>Rubfila International Ltd.</td>
+      <td>RUBFILA</td>
+      <td>RUBFILA INTERNATIONAL LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>5.0</td>
+      <td>INE642C01025</td>
+      <td>Tyres &amp; Rubber Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Tyres &amp; Rubber Products</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>500368</td>
+      <td>Ruchi Soya Industries ltd.</td>
+      <td>RUCHISOYA</td>
+      <td>RUCHI SOYA INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>2.0</td>
+      <td>INE619A01035</td>
+      <td>Edible Oil</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Edible Oil</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>500370</td>
+      <td>Salora International Limited</td>
+      <td>SALORAINTL</td>
+      <td>SALORA INTERNATIONAL LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE924A01013</td>
+      <td>Trading &amp; Distributors</td>
+      <td>Equity</td>
+      <td>Services</td>
+      <td>Services</td>
+      <td>Commercial Services &amp; Supplies</td>
+      <td>Trading &amp; Distributors</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>500378</td>
+      <td>Jindal Saw Ltd.</td>
+      <td>JINDALSAW</td>
+      <td>JINDAL SAW LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE324A01024</td>
+      <td>Iron &amp; Steel Products</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Iron &amp; Steel Products</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>500380</td>
+      <td>JK Lakshmi Cement Limited</td>
+      <td>JKLAKSHMI</td>
+      <td>JK LAKSHMI CEMENT LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE786A01032</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>500387</td>
+      <td>Shree Cements Ltd.,</td>
+      <td>SHREECEM</td>
+      <td>SHREE CEMENT LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE070A01015</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>500388</td>
+      <td>Shree Krishna Paper Mills &amp; Industr</td>
+      <td>SKPMIL</td>
+      <td>SHREE KRISHNA PAPER MILLS &amp; INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE970C01012</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>500390</td>
+      <td>Reliance Infrastructure Ltd</td>
+      <td>RELINFRA</td>
+      <td>RELIANCE INFRASTRUCTURE LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE036A01016</td>
+      <td>Electric Utilities</td>
+      <td>Equity</td>
+      <td>Utilities</td>
+      <td>Power</td>
+      <td>Power</td>
+      <td>Electric Utilities</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>500400</td>
+      <td>Tata Power Co. Ltd</td>
+      <td>TATAPOWER</td>
+      <td>TATA POWER CO.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE245A01021</td>
+      <td>Electric Utilities</td>
+      <td>Equity</td>
+      <td>Utilities</td>
+      <td>Power</td>
+      <td>Power</td>
+      <td>Electric Utilities</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>500402</td>
+      <td>SPML Infra Limited</td>
+      <td>SPMLINFRA</td>
+      <td>SPML Infra Limited</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE937A01023</td>
+      <td>Civil Construction</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Construction</td>
+      <td>Construction</td>
+      <td>Civil Construction</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>500403</td>
+      <td>Sundram Fasteners Ltd.,</td>
+      <td>SUNDRMFAST</td>
+      <td>SUNDRAM FASTENERS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE387A01021</td>
+      <td>Fastener</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Fastener</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>500404</td>
+      <td>Sunflag Iron &amp; Steel Co. Ltd.,</td>
+      <td>SUNFLAG</td>
+      <td>SUNFLAG IRON &amp; STEEL CO.LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE947A01014</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>500405</td>
+      <td>Supreme Petrochem Ltd.</td>
+      <td>SPLPETRO</td>
+      <td>SUPREME PETROCHEM LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>4.0</td>
+      <td>INE663A01025</td>
+      <td>Petrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Petrochemicals</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>500407</td>
+      <td>Swaraj Engines Ltd.</td>
+      <td>SWARAJENG</td>
+      <td>SWARAJ ENGINES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE277A01016</td>
+      <td>Diesel Engines</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Diesel Engines</td>
+    </tr>
+    <tr>
+      <th>201</th>
+      <td>500408</td>
+      <td>Tata Elxsi Ltd</td>
+      <td>TATAELXSI</td>
+      <td>TATA ELXSI LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE670A01012</td>
+      <td>Computers - Software &amp; Consulting</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Software</td>
+      <td>Computers - Software &amp; Consulting</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>500410</td>
+      <td>ACC Ltd</td>
+      <td>ACC</td>
+      <td>ACC LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE012A01025</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>500411</td>
+      <td>Thermax Ltd.</td>
+      <td>THERMAX</td>
+      <td>THERMAX LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE152A01029</td>
+      <td>Heavy Electrical Equipment</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Electrical Equipment</td>
+      <td>Heavy Electrical Equipment</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>500412</td>
+      <td>Thirumalai Chemicals Ltd.,</td>
+      <td>TIRUMALCHM</td>
+      <td>THIRUMALAI CHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE338A01024</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>500413</td>
+      <td>Thomas Cook (India) Ltd.,</td>
+      <td>THOMASCOOK</td>
+      <td>THOMAS COOK (INDIA) LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE332A01027</td>
+      <td>Tour- Travel Related Services</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Tour, Travel Related Services</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>500414</td>
+      <td>Timex Group India Ltd</td>
+      <td>TIMEX</td>
+      <td>TIMEX GROUP INDIA LTD.-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>1.0</td>
+      <td>INE064A01026</td>
+      <td>Gems- Jewellery And Watches</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Gems, Jewellery And Watches</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>500418</td>
+      <td>Tokyo Plast International Ltd.</td>
+      <td>TOKYOPLAST</td>
+      <td>TOKYO PLAST INTERNATIONAL LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE932C01012</td>
+      <td>Plastic Products - Consumer</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Plastic Products - Consumer</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>500420</td>
+      <td>Torrent Pharmaceuticals Ltd.</td>
+      <td>TORNTPHARM</td>
+      <td>TORRENT PHARMACEUTICALS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>5.0</td>
+      <td>INE685A01028</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>500422</td>
+      <td>Transchem Limited.</td>
+      <td>TRANSCHEM</td>
+      <td>TRANSCHEM LTD.-$</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE019B01010</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>500425</td>
+      <td>Ambuja Cements Ltd.</td>
+      <td>AMBUJACEM</td>
+      <td>AMBUJA CEMENTS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE079A01024</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Construction Materials</td>
+      <td>Cement &amp; Cement Products</td>
+      <td>Cement &amp; Cement Products</td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td>500426</td>
+      <td>UTL Industries Limited</td>
+      <td>UTLINDS</td>
+      <td>UTL Industries Limited</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>1.0</td>
+      <td>INE184E01024</td>
+      <td>Residential- Commercial Projects</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Realty</td>
+      <td>Realty</td>
+      <td>Residential, Commercial Projects</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>500429</td>
+      <td>Uniphos Enterprises Limited.</td>
+      <td>UNIPHOS</td>
+      <td>UNIPHOS ENTERPRISES LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>2.0</td>
+      <td>INE037A01022</td>
+      <td>Trading - Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Trading - Chemicals</td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td>500439</td>
+      <td>Vardhman Holdings Limited</td>
+      <td>VHL</td>
+      <td>VARDHMAN HOLDINGS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE701A01023</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>500440</td>
+      <td>Hindalco Industries Ltd.</td>
+      <td>HINDALCO</td>
+      <td>HINDALCO INDUSTRIES LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE038A01020</td>
+      <td>Aluminium</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Non - Ferrous Metals</td>
+      <td>Aluminium</td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td>500444</td>
+      <td>West Coast Paper Mills Limited</td>
+      <td>WSTCSTPAPR</td>
+      <td>WEST COAST PAPER MILLS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE976A01021</td>
+      <td>Paper &amp; Paper Products</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Forest Materials</td>
+      <td>Paper, Forest &amp; Jute Products</td>
+      <td>Paper &amp; Paper Products</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>500449</td>
+      <td>Hindustan Organic Chemicals Ltd.,</td>
+      <td>HOCL</td>
+      <td>HINDUSTAN ORGANIC CHEMICALS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE048A01011</td>
+      <td>Commodity Chemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Commodity Chemicals</td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td>500450</td>
+      <td>MPIL CORPORATION LIMITED</td>
+      <td>MPILCORPL</td>
+      <td>MPIL CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE844C01027</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>500456</td>
+      <td>Pasupati Acrylon Ltd.</td>
+      <td>PASUPTAC</td>
+      <td>PASUPATI ACRYLON LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE818B01023</td>
+      <td>Petrochemicals</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Chemicals</td>
+      <td>Chemicals &amp; Petrochemicals</td>
+      <td>Petrochemicals</td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td>500458</td>
+      <td>Kore Foods Limited</td>
+      <td>KORE</td>
+      <td>Kore Foods Ltd</td>
+      <td>Active</td>
+      <td>XT</td>
+      <td>10.0</td>
+      <td>INE601A01017</td>
+      <td>Other Food Products</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Food Products</td>
+      <td>Other Food Products</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>500459</td>
+      <td>Procter &amp; Gamble Hygiene &amp; Health Care Ltd.</td>
+      <td>PGHH</td>
+      <td>PROCTER &amp; GAMBLE HYGIENE &amp; HEALTH CARE LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE179A01014</td>
+      <td>Personal Care</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Personal Products</td>
+      <td>Personal Care</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>500460</td>
+      <td>Mukand Ltd.,</td>
+      <td>MUKANDLTD</td>
+      <td>MUKAND LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE304A01026</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>222</th>
+      <td>500463</td>
+      <td>BLACK BOX LIMITED</td>
+      <td>BBOX</td>
+      <td>Black Box Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE676A01027</td>
+      <td>IT Enabled Services</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Services</td>
+      <td>IT Enabled Services</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>500464</td>
+      <td>Ucal Fuel Systems Ltd.,</td>
+      <td>UCALFUEL</td>
+      <td>UCAL FUEL SYSTEMS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE139B01016</td>
+      <td>Auto Components &amp; Equipments</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Auto Components</td>
+      <td>Auto Components &amp; Equipments</td>
+    </tr>
+    <tr>
+      <th>224</th>
+      <td>500467</td>
+      <td>Harrisons Malayalam Ltd.,</td>
+      <td>HARRMALAYA</td>
+      <td>HARRISONS MALAYALAM LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE544A01019</td>
+      <td>Tea &amp; Coffee</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Tea &amp; Coffee</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>500469</td>
+      <td>Federal Bank Ltd.</td>
+      <td>FEDERALBNK</td>
+      <td>FEDERAL BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE171A01029</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>226</th>
+      <td>500470</td>
+      <td>TATA STEEL LIMITED</td>
+      <td>TATASTEEL</td>
+      <td>TATA STEEL LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE081A01012</td>
+      <td>Iron &amp; Steel</td>
+      <td>Equity</td>
+      <td>Commodities</td>
+      <td>Metals &amp; Mining</td>
+      <td>Ferrous Metals</td>
+      <td>Iron &amp; Steel</td>
+    </tr>
+    <tr>
+      <th>227</th>
+      <td>500472</td>
+      <td>SKF India Ltd.</td>
+      <td>SKFINDIA</td>
+      <td>SKF India Ltd</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE640A01023</td>
+      <td>Bearings</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Bearings</td>
+    </tr>
+    <tr>
+      <th>228</th>
+      <td>500477</td>
+      <td>Ashok Leyland Ltd.,</td>
+      <td>ASHOKLEY</td>
+      <td>ASHOK LEYLAND LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE208A01029</td>
+      <td>Commercial Vehicles</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Agricultural, Commercial &amp; Construction Vehicles</td>
+      <td>Commercial Vehicles</td>
+    </tr>
+    <tr>
+      <th>229</th>
+      <td>500480</td>
+      <td>Cummins India Ltd.,</td>
+      <td>CUMMINSIND</td>
+      <td>CUMMINS INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE298A01020</td>
+      <td>Diesel Engines</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Diesel Engines</td>
+    </tr>
+    <tr>
+      <th>230</th>
+      <td>500483</td>
+      <td>Tata Communications Limited</td>
+      <td>TATACOMM</td>
+      <td>TATA COMMUNICATIONS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE151A01013</td>
+      <td>Telecom - Cellular &amp; Fixed line services</td>
+      <td>Equity</td>
+      <td>Telecommunication</td>
+      <td>Telecommunication</td>
+      <td>Telecom - Services</td>
+      <td>Telecom - Cellular &amp; Fixed line services</td>
+    </tr>
+    <tr>
+      <th>231</th>
+      <td>500488</td>
+      <td>Abbott India Ltd.</td>
+      <td>ABBOTINDIA</td>
+      <td>ABBOTT INDIA LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE358A01014</td>
+      <td>Pharmaceuticals</td>
+      <td>Equity</td>
+      <td>Healthcare</td>
+      <td>Healthcare</td>
+      <td>Pharmaceuticals &amp; Biotechnology</td>
+      <td>Pharmaceuticals</td>
+    </tr>
+    <tr>
+      <th>232</th>
+      <td>500490</td>
+      <td>Bajaj Holdings &amp; Investment Limited</td>
+      <td>BAJAJHLDNG</td>
+      <td>BAJAJ HOLDINGS &amp; INVESTMENT LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE118A01012</td>
+      <td>Holding Company</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Holding Company</td>
+    </tr>
+    <tr>
+      <th>233</th>
+      <td>500493</td>
+      <td>Bharat Forge Ltd</td>
+      <td>BHARATFORG</td>
+      <td>BHARAT FORGE LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE465A01025</td>
+      <td>Castings &amp; Forgings</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Industrial Products</td>
+      <td>Castings &amp; Forgings</td>
+    </tr>
+    <tr>
+      <th>234</th>
+      <td>500495</td>
+      <td>Escorts Limited,</td>
+      <td>ESCORTS</td>
+      <td>ESCORTS LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE042A01014</td>
+      <td>Tractors</td>
+      <td>Equity</td>
+      <td>Industrials</td>
+      <td>Capital Goods</td>
+      <td>Agricultural, Commercial &amp; Construction Vehicles</td>
+      <td>Tractors</td>
+    </tr>
+    <tr>
+      <th>235</th>
+      <td>500500</td>
+      <td>Hindustan Motors Ltd.,</td>
+      <td>HINDMOTORS</td>
+      <td>HINDUSTAN MOTORS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>5.0</td>
+      <td>INE253A01025</td>
+      <td>Passenger Cars &amp; Utility Vehicles</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Automobile and Auto Components</td>
+      <td>Automobiles</td>
+      <td>Passenger Cars &amp; Utility Vehicles</td>
+    </tr>
+    <tr>
+      <th>236</th>
+      <td>532189</td>
+      <td>India Tourism Development Corporati</td>
+      <td>ITDC</td>
+      <td>INDIA TOURISM DEVELOPMENT CORPORATION LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>10.0</td>
+      <td>INE353K01014</td>
+      <td>Hotels &amp; Resorts</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Services</td>
+      <td>Leisure Services</td>
+      <td>Hotels &amp; Resorts</td>
+    </tr>
+    <tr>
+      <th>237</th>
+      <td>532209</td>
+      <td>Jammu and Kashmir Bank Ltd.</td>
+      <td>J&amp;KBANK</td>
+      <td>JAMMU &amp; KASHMIR BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE168A01041</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>238</th>
+      <td>532210</td>
+      <td>City Union Bank Ltd</td>
+      <td>CUB</td>
+      <td>CITY UNION BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE491A01021</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>239</th>
+      <td>532212</td>
+      <td>Archies Ltd.</td>
+      <td>ARCHIES</td>
+      <td>ARCHIES LTD.</td>
+      <td>Active</td>
+      <td>T</td>
+      <td>2.0</td>
+      <td>INE731A01020</td>
+      <td>Leisure Products</td>
+      <td>Equity</td>
+      <td>Consumer Discretionary</td>
+      <td>Consumer Durables</td>
+      <td>Consumer Durables</td>
+      <td>Leisure Products</td>
+    </tr>
+    <tr>
+      <th>240</th>
+      <td>532215</td>
+      <td>AXIS Bank Ltd.</td>
+      <td>AXISBANK</td>
+      <td>AXIS BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>2.0</td>
+      <td>INE238A01034</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>241</th>
+      <td>532216</td>
+      <td>HB Stockholdings Ltd.</td>
+      <td>HBSTOCK</td>
+      <td>HB STOCKHOLDINGS LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE550B01022</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Non Banking Financial Company (NBFC)</td>
+    </tr>
+    <tr>
+      <th>242</th>
+      <td>532217</td>
+      <td>Siel Financial Services Ltd.</td>
+      <td>SIELFNS</td>
+      <td>SIEL FINANCIAL SERVICES LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE027F01014</td>
+      <td>Other Financial Services</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Finance</td>
+      <td>Other Financial Services</td>
+    </tr>
+    <tr>
+      <th>243</th>
+      <td>532218</td>
+      <td>South Indian Bank Ltd.</td>
+      <td>SOUTHBANK</td>
+      <td>SOUTH INDIAN BANK LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE683A01023</td>
+      <td>Private Sector Bank</td>
+      <td>Equity</td>
+      <td>Financial Services</td>
+      <td>Financial Services</td>
+      <td>Banks</td>
+      <td>Private Sector Bank</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>532219</td>
+      <td>Energy Development Company Ltd.</td>
+      <td>ENERGYDEV</td>
+      <td>ENERGY DEVELOPMENT COMPANY LTD.</td>
+      <td>Active</td>
+      <td>B</td>
+      <td>10.0</td>
+      <td>INE306C01019</td>
+      <td>Electric Utilities</td>
+      <td>Equity</td>
+      <td>Utilities</td>
+      <td>Power</td>
+      <td>Power</td>
+      <td>Electric Utilities</td>
+    </tr>
+    <tr>
+      <th>245</th>
+      <td>532221</td>
+      <td>Sonata Software Ltd.</td>
+      <td>SONATSOFTW</td>
+      <td>SONATA SOFTWARE LTD.</td>
+      <td>Active</td>
+      <td>A</td>
+      <td>1.0</td>
+      <td>INE269A01021</td>
+      <td>Computers - Software &amp; Consulting</td>
+      <td>Equity</td>
+      <td>Information Technology</td>
+      <td>Information Technology</td>
+      <td>IT - Software</td>
+      <td>Computers - Software &amp; Consulting</td>
+    </tr>
+    <tr>
+      <th>246</th>
+      <td>532230</td>
+      <td>Bengal Tea &amp; fabrics Ltd.</td>
+      <td>BENGALT</td>
+      <td>BENGAL TEA &amp; FABRICS LTD.</td>
+      <td>Active</td>
+      <td>X</td>
+      <td>10.0</td>
+      <td>INE665D01016</td>
+      <td>Tea &amp; Coffee</td>
+      <td>Equity</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Fast Moving Consumer Goods</td>
+      <td>Agricultural Food &amp; other Products</td>
+      <td>Tea &amp; Coffee</td>
+    </tr>
+  </tbody>
+</table>

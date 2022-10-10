@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" id="file">
+    <button id="submitBtn">Generate</button>
+    <div class="download"></div>
+    <script>
+        let data;
+        var formdata = new FormData();
+        let file = document.querySelector('#file')
+        let downloadContainer = document.querySelector('.download')
+        let submitBtn = document.querySelector('#submitBtn')
+        const BASE_URL = "http://localhost:8080"
+
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log(file)
+            formdata.append("file", file.files[0], "sample.pdf");
+            formdata.append("inlineOptions", "option1");
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+            };
+
+            fetch(`${BASE_URL}/split_pdf/`, requestOptions)
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result)
+                    data = result;
+                    if(result){
+                        let anchor = document.createElement('a');
+                        anchor.setAttribute('href', result.file_url);
+                        anchor.setAttribute('download', true);
+                        anchor.textContent = "Download Zip";
+                        anchor.style.cursor = "pointer";
+                        downloadContainer.append(anchor);
+                    }
+                })
+                .catch(error => console.log('error', error));
+        })
+    </script>
+</body>
+
+</html>

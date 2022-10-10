@@ -1,0 +1,461 @@
+Generated on,Author,Repository,date
+"",,,
+"",,,Some of the information is created
+"",,Z:\2 - GetLost Project Example and Documents\Get Lost Project,
+30/04/2012,eaDocX Sales,,"as the document is generated,"
+"",,Example.eap,"some is stored in eaDocX, and"
+Category,Comments File,,"As with all eaDocX sections, what"
+"",,,appears here is configurable.
+"","Shows the main formatting options, including new C:\Users\Ian\Documents\7 -",,
+FINAL,,,
+"",V3.0 features like H&V tables and Word Table styles eaDocX Training,,
+Comment [I12]: This is a list of Alias Individual,Description,Reqts,
+"",,,"<<individual>>Actor elements,"
+AC00 Martin Jones - CEO,"CEO, GetLost Ltd.","Quotes,",which we have chosen to be
+"",Responsible to the parent,"Providers,",printed in a list.
+"",company for the success,Options,
+"",and profitability of GetLost.,,Each element gets a row in the
+"",Involvement in the day-to-,,"table, and we can choose which"
+"",day running of the project,,attributes appear in which
+"",is as head of the Steering,,"columns, and the headings of"
+"",Group for GetLost,,those columns.
+"",development.,,Comment [I13]: This row is
+"",This change was made,,"highlighted, because this"
+"",today.,,document is using eaDocX Change
+AC01 Clare Smart - COO,Chief Operating Officer.,"Reporting,",Marking.
+"",,,
+"",When GetLost is,"Non-TBML suppliers,",
+"",,,This examines the 'last updated'
+"",operational Clare will be,"Role of TBML,",
+"",,,"date/time of each element,"
+"",responsible to the board,"Ticketless suppliers,","wherever it is printed, and"
+"",for all aspects of the day-,KPIs,highlights those which have been
+"",to-day operation of the,,changed since a specified date.
+"",company.,,
+AC02 Frank Bey - CTO,Chief Technology Officer,,This makes it much easier for
+readers to go straight to the AC11 Mark Ellsworth - CMO,Chief Marketing Officer,Allowed Payment,
+"",,,newest part of a document.
+"",Ultimately responsible to,"methods,",
+"",,,
+"",the board for the GetLost,"Booking,",
+"",,,It's not as detailed as Word
+"",product and customer,"Breaking-up Quotes,",change-marking - the reader can't
+"","experience, in reality will","Cancelling bookings,",see exactly which text was
+"",delegate most decisions to,Convert a quote into a,changed - but all the information
+"",Jilly.,"booking,","does come from the EA model, so"
+"",,"Customer experience,",may have changes made by many
+"",,"Customer preferences,",people.
+"",,"Enquiry,",Comment [I14]: This is a
+"",,"Non-TBML suppliers,",cross-reference within the EA
+"",,"Pre-stored locations,","model, where one element"
+"",,"Quote,",references another one.
+"",,Retrieve previous,eaDocX has made this into a
+"",,"quotes,",hyperlinked cross-reference within
+"",,"the document. Sign-up,",
+"",,"Storing quotes,",Comment [I15]: The data in
+"",,"Ticketless suppliers,",this column comes not from
+"",,"Quotes,","attributes of the Actor, but from"
+"",,Providers,another element which is related
+"",,,"to the Actor - in this case, a"
+AC12 Jilly Smart - Product Manager,Product Manager,"Providers,",
+"",,,related Requirement.
+"",Responsible for the,"Options,",This makes those EA relationships
+"",detailed design of the,"Quotes,","visible in the document, because"
+"",product and customer,KPIs,they are really important.
+"",experience.,,
+AC05 Beth Robinson - Ops Manager,,Payments,If the target of the relationship
+AC06 Marc Leclerc - Programme,,,"(the Requirements, in this case)"
+"",,,"are also printed in this document,"
+Manager,,,
+"",,,then this becomes a hyperlink.
+Alias,Individual,Description,Reqts,
+AC03,Jenn Thorson - CLO,Chief Legal Officer,,
+"AC04Pierre Carandini - CFOChief Financial OfficerPayments,KPIs,Reporting,Allowed Paymentmethods",,,,
+"",Maud Sharpe - Business Analyst,Responsible for production,,
+"",,of:,,
+"",,?Initial requirements,,
+"",,set,,
+"",,?Use Cases,,
+"",,?Sketches of the,,
+"",,user interface,,
+"AC07Nick Adams - Project Manager(Launch)",,,,
+AC10,Barbera Allen-Jones - Test,Responsible for the,,
+"",Manager,acceptance testing of the,,
+"",solution which is provided,,,
+by the supplier of the,,,,
+"GetLost software, and for",,,,
+running the User,,,,
+Acceptance Test.,,,,
+"AC09Edward Alberts - TechnicalThe project technicalArchitectarchitect is responsible tothe Project Manager forthe production of the HighLevel Design, and theproduction of theStatement of Requirementswhich will be sent tosuppliers of the GetLosttechnical solution.",,,,
+"Comment [I16]: The rowshading in this table is anotheroption. We have configured alltables to use a particular WordTable Style (calledeaDocXTableNormal) which allowsus to configure many moreoptions, including this alternate-row shading.Have look at the options which areavailable in Word Table Styles -you can control almost anythingyou want in this way."
+"",,and stereotyping 'Actor' see
+Author of this analysis,Last updated on,sensible way to do it.
+"",,
+Fred,23/04/2012,As we have quite a lot to say
+"",,"about competitors, we have"
+Author of this analysis,Last updated on,competitor information. This is
+"",,configurable.
+Fred,23/04/2012,Comment [I19]: Although
+Author of this analysis,Last updated on
+Ian,22/04/2012
+"Comment [I23]: This is a tableof <<high Level>>Requirements.Every stereotype of every elementtype can have differentformatting.This makes stereotypes reallyimportant, but that's just goodmodelling style anyway.We don't HAVE to make eachstereotype format differently - wecould just create a default one forall 'Requirement' elements, whichwill get used for any stereotypewhich doesn't have formatting ofits own.Comment [I24]: We're quitekeen on using the EA 'Auto-Counters' feature to create uniqueIDs for most elements, and we putthose into each element's 'Alias'attribute.This is just how we have chosen toconstruct our model.",,,,
+Req Ref,Name,Descriptio,,
+HL_REQ_1,Providers,"""GetLost"" will aggregate services from many",,
+"",,"providers: airlines, hotel booking agencies and hotel",,
+"",,,,"chains, coach and train companies"
+"HL_REQ_2OptionsThe service shall allow customers to input theirsource and destination location, and the service shallprovide them with travel options, with prices & timesfor each. E.g. ""Bath"" to ""London centre"" would givethe customer the train, coach, hire-car options",,,,
+HL_REQ_5,KPIs,Conversion of quotes into bookings is a key,,
+"",,"performance indicator for the system, and must be",,
+"",,,,tracked each day/week/month
+"HL_REQ_3PaymentsCustomers shall register their personal details and apayment method on the site before a booking can bemade.",,,,
+HL_REQ_,,,Quotes,"The Customer shall be able to get a quote, which, if"
+"",,"they are registered, which may be stored in the",,
+"","system, for future use, but only if they are registered.",,,
+Risk,,,,
+"",Risk,Risk Description,,
+Ref,,,,
+"",,,,
+"",KPIs,TBD,,
+"GL-03Payment reconciliationThere is a risk that the reconciliation mechanism willrequire additional work (not included inscoping/estimates). This will result in additionalcosts and schedule delivery impact.",,,,
+GL-04,Providers commercial deals,There is a risk that deals cannot be negotiated with,,
+"",,providers,,
+"",,,,
+Risk,,
+"",Risk,Risk Description
+Ref,,
+"",,
+"",KPIs,TBD
+"GL-03Payment reconciliationThere is a risk that the reconciliation mechanism willrequire additional work (not included inscoping/estimates). This will result in additionalcosts and schedule delivery impact.",,
+GL-04,Providers commercial deals,There is a risk that deals cannot be negotiated with
+"",,providers
+""
+Req Ref,Name,Description,
+REQ005,Enquiry,An enquiry uses data that the TravelOptimizer has gathered,
+"",,"from suppliers, but which is non-binding. Suppliers provide this",Comment [I25]: These are all
+"",,data free,tables of 'Requirement' elements.
+REQ004,Quote,A Quote involves the system communicating with the supplier,eaDocX makes the columns all the
+"",,"to obtain a real-time value of the price of the ravel, hotel, flight","same width, and uses all the same"
+"",,etc,formatting for each table.
+"",,,
+REQ003,Booking,A Booking is where a quote is made into a firm purchase of,
+"",,,Choosing the width of columns is a
+"",,services,matter of trial-and-error:
+Req Ref,Name,Description
+REQ000,Sign-up,There will need to be a process for signing-up new suppliers.
+"",,Suppliers systems should all conform with the TBML (Travel
+"",,"Booking & quotes Markup Language) standard, otherwise we"
+"",,will have to produce bespoke interface code for each supplier.
+REQ001,Role of TBML,All TBML-compliant suppliers get paid via the TBMLCo.
+"",,"Payment Settlement System (PSS), where consumer"
+"",,"companies (like GetLost ) pay Suppliers once a month, via a"
+"",,single payment to TBMLCo. which in turn distributes those
+"",,funds to suppliers.
+REQ002,Non-TBML,Senior Manager approval shall be required in order to sign-up
+"",suppliers,"a non-TBML supplier, who must have obtained a firm quote for"
+"",,the creation of the interface software from our out-sourced
+"",,"software providers (IBM), plus approval from our IT & testing"
+"",,managers
+Req Ref,Name Description
+REQ014,"Cancelling bookings Under some circumstances, a booking may be cancelled,"
+"",though different suppliers have different rules and fees for
+"",this.
+REQ015,"Ticketless suppliers Wherever possible, GetLost? will use ticketless suppliers, but"
+"",this may not always be possible.
+Req Ref,Name Description
+REQ016,Breaking-up Quotes Requests for quotes get broken-up into separate request for
+"","journey 'Steps', which may be sent to many different suppliers."
+REQ006,Customer experience A Customer shall be able to tell the system their travel
+"","requirements e.g. time & date, start & end points, restrictions"
+"","& preferences, then the system will give recommended travel"
+Req Ref,Name,Description
+options.,,
+REQ007,Pre-stored locations,There shall be a be a set of start & end locations pre-stored
+"",,"e.g. ""London - Trafalgar Square"" , plus the customer shall be"
+"",,able to store their own locations.
+REQ008Storing quotesCustomer may then store those journeys as a quote,,
+REQ009,Retrieve previous,Customer shall be able to login and retrieve previous quotes
+"",quotes,
+"REQ010Convert a quote intoCustomer shall be able to convert a quote into a bookinga booking",,
+REQ011,Allowed Payment,The solution shall accept only credit or debit card payment
+"",methods,methods
+"REQ012ReportingWe need reports on: revenue by supplier, - conversion ratesper day/week/month, segmented by customer type, -commission rates per hour/day/week/month, by customersegment and supplier. Other reports to be determined",,
+REQ013,Customer,Customer shall be able to save their preferences e.g. for a
+"",preferences,particular airline or hotel chain or model of transport.
+""
+"Comment [I26]: Theseattributes come from relationshipswhich we have created in EAbetween Actors and Use Cases.Because the Use Cases are alsoprinted in this document, theattributes are created ashyperlinks.This allows readers to 'browse'your document, just as they woulda website, by following linksaround the document, rather thanreading it from start to finish.Comment [I27]: Anotherinternal cross-reference, fromwithin EA.",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Actor,,,Description,,,ses Use Cases,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,TBMLCo.,,,,,,ay TBMLCo.,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",stablish non-TBML supplier,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Browser,,,"An anonymous person, just",,,earch for Travel,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,browsing around the net.,,,,,,,,,,,,
+"",,,,,We think it is important to,,,,,,,,,,
+"",,,,,"support these users, as if they",,,,,,,,,,
+"",,,,,have a good experience as,,,,,,,,,,
+"",,,,,"browser, they may decide to go",,,,,,,,,,
+"",,,,,"further and register. However,",,,,,,,,,,
+"",,,,,we don't want to be TOO nice to,,,,,,,,,,
+"",,,,,them.,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,"CustomerA Browser becomes a CustomerMake Booking,at the point where they Register. Register,Get Quote",rowser,"ecomes a CustomerMake Booking,",,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Payment,,,This is the only means by which a,,,ollect money from client,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Service System,,,customer can make a payment,,,,,,,,,,
+"",,,"to GetLost, via the single",,,,,,,,,,,,
+"",,,,Payment Service System. Who,,,,,,,,,,,
+"",,,,that supplier will be will be,,,,,,,,,,,
+"",,,,"determined later in the project,",,,,,,,,,,,
+"",,,,once detailed requirements are,,,,,,,,,,,
+"",,,,known.,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Supplier,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Actor,,,Description,,,ses Use Cases,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,TBMLCo.,,,,,,ay TBMLCo.,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",stablish non-TBML supplier,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Browser,,,"An anonymous person, just",,,earch for Travel,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,browsing around the net.,,,,,,,,,,,,
+"",,,,,We think it is important to,,,,,,,,,,
+"",,,,,"support these users, as if they",,,,,,,,,,
+"",,,,,have a good experience as,,,,,,,,,,
+"",,,,,"browser, they may decide to go",,,,,,,,,,
+"",,,,,"further and register. However,",,,,,,,,,,
+"",,,,,we don't want to be TOO nice to,,,,,,,,,,
+"",,,,,them.,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,"CustomerA Browser becomes a CustomerMake Booking,at the point where they Register. Register,Get Quote",rowser,"ecomes a CustomerMake Booking,",,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Payment,,,This is the only means by which a,,,ollect money from client,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Service System,,,customer can make a payment,,,,,,,,,,
+"",,,"to GetLost, via the single",,,,,,,,,,,,
+"",,,,Payment Service System. Who,,,,,,,,,,,
+"",,,,that supplier will be will be,,,,,,,,,,,
+"",,,,"determined later in the project,",,,,,,,,,,,
+"",,,,once detailed requirements are,,,,,,,,,,,
+"",,,,known.,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,Supplier,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,
+ay TBMLCo.
+""
+""
+"",,,
+"",,stablish non-TBML supplier,
+"",,,
+"",,,
+"",,,
+earch for Travel
+""
+""
+"CustomerA Browser becomes a CustomerMake Booking,at the point where they Register. Register,Get Quote",rowser,"ecomes a CustomerMake Booking,"
+"",,
+"",,
+"CustomerA Browser becomes a CustomerMake Booking,at the point where they Register. Register,Get Quote"
+""
+"CustomerA Browser becomes a CustomerMake Booking,at the point where they Register. Register,Get Quote"
+""
+""
+ollect money from client
+""
+""
+uote
+"Retrieves previously2User enters the details for the quote (details TBD)stored quote"
+""
+""
+"Retrieves previously2User enters the details for the quote (details TBD)stored quote"
+""
+"System creates a consolidated Quote from the individual4Steps, and shows that to the user.",,
+"Comment [I28]: This is howeaDocX can print EA StructuredScenarios.Each scenario is a separate tableof steps (we could have printedthem as separate paragraphs, butwe thought a table looked neater)Comment [I29]: Where thescenario has alternates andexceptions, eaDocX automaticallycreates hyperlinks to those.This means your EA model can usethe full power of EA StructuredScenarios, and the document canshow all the links which youcreated.Comment [I30]: If yourStructured Scenario specifieswhere the Alternate path rejoinsthe main path, that also becomesa hyperlink.Comment [I31]: Note thatexceptions - according to the UMLdefinition - don't rejoin the basicpath. That would make themalternates.So, Exception paths don't print a'rejoins' attribute",,,,,,,,,,,,,,,,,
+"",,,,,,,,uote,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,tep,,,xtensions,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,se Case starts when the user decides they want a quote.,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,his might be a Browser or Customer.,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,"Retrieves previously2User enters the details for the quote (details TBD)stored quote",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,ystem breaks the quote into individual Journey Steps and,,,nvalid Quote,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,sks Supplier systems to create quotes for each Step,,,eques,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,"System creates a consolidated Quote from the individual4Steps, and shows that to the user.",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,Step,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,User may ask system for a list of previously,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,stored quotes,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,2System shows user the lists of quotes,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,User chooses one.,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,et Quote step:,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,tep,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,ystem indicates to the user what information,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,s required,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,"Design Note: good UI design should prevent a2 badly-formed quote from being submitted inthe first place.",,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,lace,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,tep,,,xtensions,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,se Case starts when the user decides they want a quote.,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,his might be a Browser or Customer.,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,"Retrieves previously2User enters the details for the quote (details TBD)stored quote",,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,ystem breaks the quote into individual Journey Steps and,,,nvalid Quote,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,sks Supplier systems to create quotes for each Step,,,eques,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,"System creates a consolidated Quote from the individual4Steps, and shows that to the user.",,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,,,
+"",,,,,,,,,,,
+"",,,,,,,,,,,
+"",,,,,Step,,,,,,
+"",,,,,,,,,,,
+"",,,,,,,,,,,
+"",,,User may ask system for a list of previously,,,,,,,,
+"",,,,,,,,,,,
+"",,,,,,stored quotes,,,,,
+"",,,,,,,,,,,
+"",,,,,,,,,,,
+"",,2System shows user the lists of quotes,,,,,,,,,
+"",,,,,,,,,,,
+"",,,,,,,,,,,
+"",,,,,User chooses one.,,,,,,
+"",,,,,,,,,,,
+"",,,,,,,,,,,
+2System shows user the lists of quotes,
+et Quote step:,
+"",
+"",
+"",,,,,,,,,
+"",,,,,,,,,
+"",,,,,tep,,,,
+"",,,,,,,,,
+"",,,,,,,,,
+"",,,ystem indicates to the user what information,,,,,,
+"",,,,,,,,,
+"",,,,s required,,,,,
+"",,,,,,,,,
+"",,,,,,,,,
+"",,"Design Note: good UI design should prevent a2 badly-formed quote from being submitted inthe first place.",,,,,,,
+"",,,,,,,,,
+"",,,,,lace,,,,
+"",,,,,,,,,
+"",,,,,,,,,
+"Design Note: good UI design should prevent a2 badly-formed quote from being submitted inthe first place.",
+"Design Note: good UI design should prevent a2 badly-formed quote from being submitted inthe first place.",
+lace,
+"",
+3.3 Issues,,,"keep Issues within our EA models,"
+Issue Ref,Issue Description,,and link them to the EA elements
+"",,,"(Requirements, Use Cases,"
+ISS034,Cash collections process We seem to be missing a whole set of processes,,
+"",,,Components) to which they refer.
+"",for the collection of un-paid invoices to Suppliers,,This means we don't have to keep
+"",Domain expert needed Who is the domain expert for this system?,,spreadsheets of issues external to
+"",Nobody yet identified,,EA.
+ISS056,"No business owner for these use These use cases have no Business Owner, hence",,
+"",cases no Actor,,

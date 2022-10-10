@@ -1,0 +1,285 @@
+# ----------------------png to ico-----------------------
+from PIL import Image
+@app.route('/png_ico/', methods = ['GET','POST'])  
+@cross_origin()
+def png_ico_1():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/pngico/" + secure_filename(f.filename) [:-4]+ ".ico"        
+        img = Image.open(input_file)
+        img.save(output_file)
+    file_url = f"{request.url_root}static/files/pngico/" + secure_filename(f.filename) [:-4]+ ".ico"
+    return jsonify({'file_url': file_url})
+
+
+# -----------------------------ico to png-----------------
+from PIL import Image
+@app.route('/ico_png/', methods = ['GET','POST'])  
+@cross_origin()
+def ico_png_1():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/icopng/" + secure_filename(f.filename) [:-4]+ ".png"        
+        img = Image.open(input_file)
+        img.save(output_file)
+    file_url = f"{request.url_root}static/files/icopng/" + secure_filename(f.filename) [:-4]+ ".png"
+    return jsonify({'file_url': file_url})
+
+# ----------------------------------bmp to png-----------------------
+
+from PIL import Image
+@app.route('/bmp_png/', methods = ['GET','POST'])  
+@cross_origin()
+def bmp_png_1():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/bmppng/" + secure_filename(f.filename) [:-4]+ ".png"        
+        img = Image.open(input_file)
+        img.save(output_file)
+    file_url = f"{request.url_root}static/files/bmppng/" + secure_filename(f.filename) [:-4]+ ".png"
+    return jsonify({'file_url': file_url})
+
+# ------------------------------png to bmp-----------------------------
+
+from PIL import Image
+@app.route('/png_bmp/', methods = ['GET','POST'])  
+@cross_origin()
+def png_bmp_1():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/pngbmp/" + secure_filename(f.filename) [:-4]+ ".bmp"        
+        img = Image.open(input_file)
+        img.save(output_file)
+    file_url = f"{request.url_root}static/files/pngbmp/" + secure_filename(f.filename) [:-4]+ ".bmp"
+    return jsonify({'file_url': file_url})
+
+
+
+# ---------------------------XLSX To PDF--------------------------------
+import pandas as pd
+import pdfkit
+
+@app.route('/excel_pdf/', methods = ['GET','POST'])  
+@cross_origin()
+def excel_pdf_1():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        df = pd.read_excel(input_file)
+        df.to_html("static/files/excel_pdf/" +secure_filename(f.filename[:-4])+".html")
+        pdfkit.from_file("static/files/excel_pdf/" +secure_filename(f.filename[:-4])+".html", "static/files/excel_pdf/" +secure_filename(f.filename[:-5])+".pdf")
+    file_url = f"{request.url_root}static/files/excel_pdf/" +secure_filename(f.filename[:-5])+".pdf"
+    return jsonify({'file_url': file_url})
+
+
+
+# ---------------------------GIF To MP4--------------------------------
+
+import moviepy.editor as mp
+from moviepy.editor import VideoFileClip
+
+@app.route('/gif_mp4/', methods = ['GET','POST'])  
+@cross_origin()
+def gif_mp4():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/gif_mp4/" + secure_filename(f.filename) [:-4]+ ".mp4"        
+        video = mp.VideoFileClip(input_file)
+        result = video.write_videofile(output_file)
+
+    file_url = f"{request.url_root}static/files/gif_mp4/" +secure_filename(f.filename[:-4])+".mp4"
+    return jsonify({'file_url': file_url})
+
+
+# --------------------------- MP4 To GIF --------------------------------
+
+@app.route('/mp4_gif/', methods = ['GET','POST'])  
+@cross_origin()
+def mp4_gif():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/mp4_gif/" + secure_filename(f.filename) [:-4]+ ".gif"   
+        video = VideoFileClip(input_file)     
+        gif_clip = video.write_gif(output_file)
+
+    file_url = f"{request.url_root}static/files/mp4_gif/" +secure_filename(f.filename[:-4])+".gif"
+    return jsonify({'file_url': file_url})
+
+# --------------------------- GIF To WEBP --------------------------------
+
+from PIL import Image, ImageSequence
+from PIL import features
+
+@app.route('/gif_webp/', methods = ['GET','POST'])  
+@cross_origin()
+def gif_webp():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/gif_webp/" + secure_filename(f.filename) [:-4]+ ".webp"   
+        sequence = []
+        im = Image.open(input_file)
+        for frame in ImageSequence.Iterator(im):
+            sequence.append(frame.copy())
+        sequence[0].save(output_file, save_all=True,  append_images = sequence[1:])
+    file_url = f"{request.url_root}static/files/gif_webp/" +secure_filename(f.filename[:-4])+".webp"
+    return jsonify({'file_url': file_url})
+
+
+-------------------------------- increase resolutions --------------------------------
+
+import cv2
+import time
+
+@app.route('/img_pixel/', methods = ['GET','POST'])  
+@cross_origin()
+def img_pixel():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/img_pixel/" + secure_filename(f.filename) [:-4]+ "_x2.jpg"   
+	img = cv2.imread(input_file)
+	width = img.shape[1]
+	height = img.shape[0]
+	
+	if request.form['inlineOptions'] ==  'option1':    
+
+		super_res = cv2.dnn_superres.DnnSuperResImpl_create()
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/LapSRN_x8.pb')
+		super_res.setModel('lapsrn',4)
+		lapsrn_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by lapsrn', end-start)
+		#cv2.imshow('LAPSRN',lapsrn_image)
+		cv2.imwrite(output_file,edsr_image)
+	
+	elif request.form['inlineOptions'] ==  'option2':    
+
+		super_res = cv2.dnn_superres.DnnSuperResImpl_create()
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/LapSRN_x4.pb')
+		super_res.setModel('lapsrn',4)
+		lapsrn_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by lapsrn', end-start)
+		#cv2.imshow('LAPSRN',lapsrn_image)
+		cv2.imwrite(output_file,edsr_image)
+
+	elif request.form['inlineOptions'] ==  'option3':    
+
+		super_res = cv2.dnn_superres.DnnSuperResImpl_create()
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/LapSRN_x2.pb')
+		super_res.setModel('lapsrn',4)
+		lapsrn_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by lapsrn', end-start)
+		#cv2.imshow('LAPSRN',lapsrn_image)
+		cv2.imwrite(output_file,edsr_image)
+
+
+        elif request.form['inlineOptions'] ==  'option4':    
+
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/EDSR_x4.pb')
+		super_res.setModel('edsr',4)
+		edsr_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by edsr', end-start)
+		#cv2.imshow('EDSR',edsr_image)
+		cv2.imwrite(output_file,edsr_image)
+
+        elif request.form['inlineOptions'] ==  'option5':    
+
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/EDSR_x3.pb')
+		super_res.setModel('edsr',4)
+		edsr_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by edsr', end-start)
+		#cv2.imshow('EDSR',edsr_image)
+		cv2.imwrite(output_file,edsr_image)
+
+        elif request.form['inlineOptions'] ==  'option6':    
+
+		start = time.time()
+		super_res.readModel('static/files/img_pixel/EDSR_x2.pb')
+		super_res.setModel('edsr',4)
+		edsr_image = super_res.upsample(img)
+		end = time.time()
+		print('Time taken in seconds by edsr', end-start)
+		#cv2.imshow('EDSR',edsr_image)
+		cv2.imwrite(output_file,edsr_image)
+
+	
+    file_url = f"{request.url_root}static/files/img_pixel/" +secure_filename(f.filename[:-4])+"_x2.jpg" 
+    return jsonify({'file_url': file_url})
+
+
+-------------------------------- background removal --------------------------------
+
+import cv2
+import pixellib
+from pixellib.tune_bg import alter_bg
+
+@app.route('/backgrnd_remvl/', methods = ['GET','POST'])  
+@cross_origin()
+def backgrnd_remvl():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/backgrnd_remvl/" + secure_filename(f.filename)[:-5] + "_removal.jpg"
+	img = cv2.imread(input_file)
+	change_bg = alter_bg()
+	change_bg.load_pascalvoc_model('static/files/backgrnd_remvl/deeplabv3_xception_tf_dim_ordering_tf_kernels.h5')
+	img2 = change_bg.color_bg(input_file,colors = (0,128,0))
+	cv2.imwrite(output_file,img2)
+
+    file_url = f"{request.url_root}static/files/backgrnd_remvl/" + secure_filename(f.filename)[:-4] + "_removal.jpg"
+    return jsonify({'file_url': file_url})
+
+
+
+-------------------------------- blur img --------------------------------
+
+import cv2
+import pixellib
+from pixellib.tune_bg import alter_bg
+
+
+@app.route('/blur_img/', methods = ['GET','POST'])  
+@cross_origin()
+def blur_img():
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename)))
+        input_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(f.filename))
+        output_file = "static/files/blur_img/" + secure_filename(f.filename)[:-5] + "_blur.jpg"
+	
+	img = cv2.imread(input_file)
+	change_bg = alter_bg()
+	change_bg.load_pascalvoc_model('static/files/blur_img/deeplabv3_xception_tf_dim_ordering_tf_kernels.h5')
+	img2 = change_bg.blur_bg(input_file,moderate=True)
+	cv2.imwrite(output_file,img2)
+    file_url = f"{request.url_root}static/files/blur_img/" + secure_filename(f.filename)[:-4] + "_blur.jpg"
+    return jsonify({'file_url': file_url})
+
+
+-------------------------------- --------------------------------

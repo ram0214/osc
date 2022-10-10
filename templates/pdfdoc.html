@@ -1,0 +1,312 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trafo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href ="{{ url_for('static', filename='vendor/aos/aos.css') }}"  rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.btn-filestack:hover {
+  background-color: #cc4343;
+  box-shadow: 0 2px 2px 0 rgba(256,256,256,0.24), 0 6px 6px 0 rgba(231, 223, 223, 0.19);
+
+}
+
+.btn-filestack_1 {
+  background-color: rgb(255, 255, 255);
+  border-color: #524f4e;
+  border: 1px solid rgb(68, 65, 65);
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 62vh;
+}
+
+
+.dropzone {
+	border-radius: 100px;
+    margin: 100px;
+    margin-left: 200px;
+    text-align: center;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.upload-icon {
+	margin: 25px 2px 10px 2px;
+}
+
+
+.logo1 {
+
+width: auto;
+height: 80px;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ======= Header ======= -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('to_home')}}"><img src="{{ url_for('static',filename= 'images/Header.png')}}" style = 'width: 130px;height: 55px;' alt="" class="img1"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="{{ url_for('to_home')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('merge_pdf')}}">Merge PDF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('split_pdf')}}">Split PDF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('encrypt_pdf')}}">Encrypt PDF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('rotate_pdf')}}">Rotate PDF</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Compression Tools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('compress_pdf')}}">Compress PDF</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('img_compression')}}">Compress Image</a></li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">E-sign PDF</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Convert pdf
+          </a>
+          <ul class="dropdown-menu">
+            <table class="table" style="height:max-content;width: max-content;" >
+              <thead>
+                <tr>
+                  <th scope="col"><h5>From PDF Conversion</h5></th>
+                  <th scope="col"><h5>To PDF Conversion</h5></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <li><a class="dropdown-item" href="{{ url_for('pdf_doc')}}">PDF TO DOCx</a></li>
+                  </th>
+                  <td>
+                    <li><a class="dropdown-item" href="{{ url_for('img_pdf')}}">Image TO PDF</a></li>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <li><a class="dropdown-item" href="{{ url_for('pdf_csv')}}">PDF TO CSV </a></li>
+                  </th>
+                  <td>
+                    <li><a class="dropdown-item" href="{{ url_for('csv_pdf')}}">CSV TO PDF </a></li>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <li><a class="dropdown-item" href="{{ url_for('pdf_img')}}">PDF To Image</a></li>
+                  </th>
+                  <td>
+                    <li><a class="dropdown-item" href="{{ url_for('ppt_pdf')}}">PPT To PDF</a></li>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <li><a class="dropdown-item" href="{{ url_for('pdf_ppt')}}">PDF To PPTx</a></li>
+                  </th>
+                  <td>
+                    <li><a class="dropdown-item" href="{{ url_for('doc_pdf')}}">DOCx To pdf</a></li>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other Conversion tools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('img_ppt')}}">Image TO PPTx</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('ppt_img')}}">PPTx TO Image</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('jpg_png')}}">JPG TO PNG</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('png_jpg')}}">PNG TO JPG</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('png_webp')}}">PNG To WEBP</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('webp_png')}}">WEBP TO PNG</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Media Conversion tools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('mp4_mp3')}}">MP4 To MP3</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('mp4_wav')}}">MP4 TO WAV</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('wav_text')}}">WAV TO TEXT</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"></script>
+    
+
+  <div class="dropzone">
+    <h1> PDF To Docx Conversion</h1>
+    <img src="{{ url_for('static',filename= 'images/PDF to DOCX .png')}}"  style="width: 320px; height: 300px;" class="upload-icon" />
+    <form action = "/pdf_doc/" method = "post" enctype="multipart/form-data">
+        <br>
+        <p><strong>[ Upload only '.pdf' Format ] </strong></p>
+        <br>
+        <input type="file" class="btn btn-filestack_1" style="width: 250px; height: 40px;" name="file" accept=".pdf"/>
+        <br>
+        <input type = "submit" class="btn btn-filestack btn-widget" value=" Download Converted Docx File">
+    </form>
+</div>
+</li>
+  
+<section id="section10">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-3">
+              <h2>Company</h2>
+              <h3><a href="#">Accelerate Transformation</a></h3>
+              <h3><a href="#">NexxeN</a></h3>
+              <h3><a href="#">About Us</a></h3>
+              <h3><a href="#">Careers</a></h3>
+              <h3><a href="#">News</a></h3>
+          </div>
+          <div class="col-md-3 col-sm-3">
+              <h2>Support</h2>
+              <h3><a href="#">Privacy Statement</a></h3>
+              <h3><a href="#">Terms of use</a></h3>
+              <h3><a href="#">Cookie policy</a></h3>
+              <h3><a href="#">Sitemap</a></h3>
+          </div>
+          <div class="col-md-3 col-sm-3">
+              <a class="twitter-timeline" data-width="220" data-height="250" href="https://twitter.com/CloudStrats?ref_src=twsrc%5Etfw">Tweets by CloudStrats</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="col-md-3 col-sm-3">
+              <h2>Connect with us</h2>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-youtube"></i>
+              <h2>Newsletter</h2>
+              <p>Learn about our new offerings. Enter your e-mail to subscribe.</p>
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search"
+                  style="width: 150px;font-family:'Roboto', sans-serif;">
+                  <button class="btn btn2" type="submit" style="background-color:#4382ef;color:white;font-family:'Roboto', sans-serif;">Go</button>
+              </form>
+          </div>
+          <div class="d-flex foot" style="justify-content:space-between;">
+              <a href="#">Copyright © 2019 Cloudstrats Inc.</a>
+              <img src="images/cloudstrats-logo-with-withe-3d-1024x170.png" style="height: 20px; width: 100px; margin-bottom: 15px;">
+          </div>
+      </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
